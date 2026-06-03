@@ -1,21 +1,21 @@
 export default function Portfolio() {
   const projects = [
-    {
-      title: "Carona UNA",
-      category: "Web App",
-      description: "Aplicativo de caronas para estudantes universitários.",
-    },
-    {
-      title: "Dashboard UX",
-      category: "UI/UX",
-      description: "Painel moderno com foco em experiência do usuário.",
-    },
-    {
-      title: "Loja Online",
-      category: "Frontend",
-      description: "Landing page moderna para e-commerce.",
-    },
-  ];
+  {
+  title: "Tech Week",
+  category: "Evento e Projeto Acadêmico",
+  description: "Participação no evento Tech Week, contribuindo para o desenvolvimento e apresentação de projetos de tecnologia, com foco em inovação, trabalho em equipe e experiência do usuário."
+},
+  {
+    title: "Avaliação de Usabilidade",
+    category: "UX Research",
+    description: "Análise heurística e testes de usabilidade em aplicativo mobile.",
+  },
+  {
+    title: "Portfólio Pessoal",
+    category: "Frontend",
+    description: "Site pessoal inspirado no design moderno do Thalles Dev.",
+  },
+];
 
   return (
     <div
@@ -58,13 +58,17 @@ export default function Portfolio() {
             Sobre Mim
           </p>
 
+          <p className="text-zinc-400 leading-8">
+  Estudante de Ciência da Computação no Centro Universitário UNA, apaixonada por tecnologia, códigos e desenvolvimento de soluções digitais.Gosto de transformar ideias em projetos reais.
+</p>
+
           <h2 className="text-4xl font-bold mb-6">
             Criando interfaces modernas e funcionais.
           </h2>
 
           <p className="text-zinc-400 leading-8">
-            Sou apaixonada por design, desenvolvimento web e experiências digitais.
-            Gosto de criar projetos modernos com visual elegante e ótima experiência
+            Design, desenvolvimento web e experiências digitais.
+            Gosto de criar projetos modernos com visual elegante minimalistas e ótima experiência
             para o usuário.
           </p>
         </div>
@@ -168,25 +172,40 @@ export default function Portfolio() {
         <p className="text-zinc-500 uppercase tracking-[0.3em] text-sm mb-4">
           Contato
         </p>
+<h2 className="text-5xl font-black">
+    Meu contato
+  </h2>
 
-        <h2 className="text-5xl font-black leading-tight">
-          Vamos criar algo incrível?
-        </h2>
+  <p className="text-zinc-400 mt-6">
+    Entre em contato para projetos e oportunidades.
+  </p>
 
-        <p className="text-zinc-400 mt-6 text-lg">
-          Entre em contato para projetos, parcerias ou freelas.
-        </p>
+  <div className="mt-8 flex flex-col items-center gap-4">
+    <a
+      href="mailto:biancaluae@gmail.com"
+      className="text-zinc-300 hover:text-white"
+    >
+      biancaluae@gmail.com
+    </a>
 
-        <button className="mt-10 bg-white text-black px-8 py-4 rounded-2xl font-bold hover:scale-105 transition">
-          Falar comigo
-        </button>
-      </section>
+    <a
+  href="/curriculo-priscila-bianca.pdf"
+  target="_blank"
+  className="bg-white text-black px-6 py-3 rounded-xl font-semibold"
+>
+  Baixar Currículo
+</a>
+  </div>
+</section> 
+       
 
       {/* FOOTER */}
       <footer className="border-t border-zinc-900 py-8 text-center text-zinc-500 text-sm">
-        © 2026 - Portfolio Mie.
+        © 2026 - Portfólio Bianca.
       </footer>
-    </div> 
+    (
+      </div> 
     
-  );
+    
+    );
 }
